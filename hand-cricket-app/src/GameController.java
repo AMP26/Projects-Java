@@ -76,7 +76,7 @@ public class GameController {
             buttonRow.getChildren().addAll(buttons);
     }
 
-    public void showRestart(boolean visible) { restartButton.setVisible(visible); }  
+    public void showRestart(boolean visible) { restartButton.setVisible(visible); }
 
     public void setUserHandImage(int number) { userHand.setImage(loadHandImage(number)); }
 
