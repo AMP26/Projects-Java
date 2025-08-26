@@ -82,7 +82,7 @@ public class GameController {
 
     public void setCompHandImage(int number) { compHand.setImage(loadHandImage(number)); }
 
-    public Image loadHandImage(int number) {
+    public Image loadHandImage(int number) { 
         // number 0 = defence, hand0.png, 1-6 hand1.png ... hand6.png
         return new Image(getClass().getResourceAsStream("/images/hand" + number + ".png"));
     }
