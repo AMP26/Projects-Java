@@ -70,7 +70,7 @@ public class GameController {
     public void setScore(String text) { scoreLabel.setText(text); }
 
 
-    public void showButtons(Button... buttons) {
+    public void showButtons(Button... buttons) { 
         buttonRow.getChildren().clear();
         if (buttons.length > 0)
             buttonRow.getChildren().addAll(buttons);
