@@ -67,7 +67,7 @@ public class GameController {
 
     public void setStatus(String text) { statusLabel.setText(text); }
 
-    public void setScore(String text) { scoreLabel.setText(text); }
+    public void setScore(String text) { scoreLabel.setText(text); } 
 
 
     public void showButtons(Button... buttons) {  
