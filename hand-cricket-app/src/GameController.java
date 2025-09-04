@@ -73,7 +73,7 @@ public class GameController {
     public void showButtons(Button... buttons) {  
         buttonRow.getChildren().clear();
         if (buttons.length > 0)
-            buttonRow.getChildren().addAll(buttons);
+            buttonRow.getChildren().addAll(buttons); 
     }
 
     public void showRestart(boolean visible) { restartButton.setVisible(visible); }
