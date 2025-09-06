@@ -32,7 +32,7 @@ public class GameController {
         statusLabel.setFont(Font.font("Arial", 18));
         scoreLabel.setFont(Font.font("Arial", 22));
         restartButton.getStyleClass().add("reset-score");
-        restartButton.setVisible(false);
+        restartButton.setVisible(false); 
 
         restartButton.setOnAction(e -> logic.resetGame());
         buttonRow.setAlignment(Pos.CENTER);
@@ -67,13 +67,13 @@ public class GameController {
 
     public void setStatus(String text) { statusLabel.setText(text); }
 
-    public void setScore(String text) { scoreLabel.setText(text); } 
+    public void setScore(String text) { scoreLabel.setText(text); }
 
 
-    public void showButtons(Button... buttons) {  
+    public void showButtons(Button... buttons) {
         buttonRow.getChildren().clear();
         if (buttons.length > 0)
-            buttonRow.getChildren().addAll(buttons); 
+            buttonRow.getChildren().addAll(buttons);
     }
 
     public void showRestart(boolean visible) { restartButton.setVisible(visible); }
@@ -82,7 +82,7 @@ public class GameController {
 
     public void setCompHandImage(int number) { compHand.setImage(loadHandImage(number)); }
 
-    public Image loadHandImage(int number) {  
+    public Image loadHandImage(int number) {
         // number 0 = defence, hand0.png, 1-6 hand1.png ... hand6.png
         return new Image(getClass().getResourceAsStream("/images/hand" + number + ".png"));
     }
