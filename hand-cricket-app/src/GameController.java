@@ -25,14 +25,14 @@ public class GameController {
     private GameLogic logic;
 
     public Scene initUI() {
-        logic = new GameLogic(this);
+        logic = new GameLogic(this);         
 
         root.setPadding(new Insets(25));
         root.setAlignment(Pos.CENTER);
         statusLabel.setFont(Font.font("Arial", 18));
         scoreLabel.setFont(Font.font("Arial", 22));
         restartButton.getStyleClass().add("reset-score");
-        restartButton.setVisible(false);   
+        restartButton.setVisible(false);
 
         restartButton.setOnAction(e -> logic.resetGame());
         buttonRow.setAlignment(Pos.CENTER);    
