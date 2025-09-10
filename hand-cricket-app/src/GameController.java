@@ -30,7 +30,7 @@ public class GameController {
         root.setPadding(new Insets(25));
         root.setAlignment(Pos.CENTER);
         statusLabel.setFont(Font.font("Arial", 18));
-        scoreLabel.setFont(Font.font("Arial", 22));
+        scoreLabel.setFont(Font.font("Arial", 22));                   
         restartButton.getStyleClass().add("reset-score");
         restartButton.setVisible(false);
 
