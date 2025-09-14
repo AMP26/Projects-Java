@@ -31,14 +31,14 @@ public class GameController {
         root.setAlignment(Pos.CENTER);
         statusLabel.setFont(Font.font("Arial", 18));
         scoreLabel.setFont(Font.font("Arial", 22));
-        restartButton.getStyleClass().add("reset-score");   
+        restartButton.getStyleClass().add("reset-score");
         restartButton.setVisible(false);
 
         restartButton.setOnAction(e -> logic.resetGame());
         buttonRow.setAlignment(Pos.CENTER);    
 
         HBox handRow = new HBox(50);
-        handRow.setAlignment(Pos.CENTER);
+        handRow.setAlignment(Pos.CENTER);     
 
         VBox userBox = new VBox(10, userHand, userLabel);
         VBox compBox = new VBox(10, compHand, compLabel);
