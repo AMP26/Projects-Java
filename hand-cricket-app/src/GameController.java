@@ -27,7 +27,7 @@ public class GameController {
     public Scene initUI() {
         logic = new GameLogic(this);         
 
-        root.setPadding(new Insets(25));    
+        root.setPadding(new Insets(25));
         root.setAlignment(Pos.CENTER);
         statusLabel.setFont(Font.font("Arial", 18));
         scoreLabel.setFont(Font.font("Arial", 22));
@@ -38,7 +38,7 @@ public class GameController {
         buttonRow.setAlignment(Pos.CENTER);    
 
         HBox handRow = new HBox(50);
-        handRow.setAlignment(Pos.CENTER);
+        handRow.setAlignment(Pos.CENTER);   
 
         VBox userBox = new VBox(10, userHand, userLabel);
         VBox compBox = new VBox(10, compHand, compLabel);
