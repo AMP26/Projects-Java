@@ -37,8 +37,8 @@ public class GameController {
         restartButton.setOnAction(e -> logic.resetGame());
         buttonRow.setAlignment(Pos.CENTER);    
 
-        HBox handRow = new HBox(50);
-        handRow.setAlignment(Pos.CENTER);   
+        HBox handRow = new HBox(50);  
+        handRow.setAlignment(Pos.CENTER);
 
         VBox userBox = new VBox(10, userHand, userLabel);
         VBox compBox = new VBox(10, compHand, compLabel);
